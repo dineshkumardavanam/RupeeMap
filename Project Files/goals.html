@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="goals.js"></script>
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+   
+
+
+   <title>Goal Tracker</title>
+   <link rel="stylesheet" href="goals.css">
+</head>
+<body>
+   <button onclick="document.getElementById('id01').style.display='block'">Goal Tracker</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate">
+
+    <div class="container">
+      <label for="uname" id="goal"><b>Goal</b></label>
+      <input id="first" type="text">
+
+      <label for="psw" id="price"><b>Price of the product</b></label>
+      <input id="second" type="text">
+
+      <label for="psw" id="price"><b>Duration(in months)</b></label>
+      <input id="third" type="text">
+
+        <input type="button" value="submit" onclick="divide()">
+
+
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-title="ChatBot"
+  agent-id="28f7c5e9-54c8-4759-8e41-40099e80686e"
+  language-code="en"
+></df-messenger>
+
+    </div>
+  </form>
+</div>
+</body>
+</html>
